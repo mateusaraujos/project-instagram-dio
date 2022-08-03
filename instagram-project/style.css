@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 11pt;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.057);
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.instagram-phone .phone {
+    width: 320px;
+    height: auto;
+}
+
+.instagram-continue {
+    display: flex;
+    flex-direction: column;
+}
+
+.instagram-logo {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.group, .entrar, .instagram-nao, .get-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 25px;
+    margin: 10px;
+}
+
+.entrar-margin {
+    margin: 10px 0;
+}
+
+.group {
+    background-color: white;
+    border: 1px solid rgba(119, 136, 153, 0.235);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    user-select: none;
+}
+
+.perfil-instagram {
+    width: 80px;
+    height: 80px;
+}
+
+.perfil {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.btns {
+    background-color: transparent;
+    border-style: none;
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.continue .btns {
+    background-color: #0095f6;
+    color: white;
+    border-radius: 5px;
+    padding: 7px 10px;
+    margin-top: 10px;
+}
+
+.continue-button, .remove-button {
+    font-size: 10pt;
+}
+
+.btns:hover {
+    cursor: pointer;
+}
+
+.nome-perfil {
+    color: rgba(128, 128, 128, 0.597);
+}
+
+.instagram-nao {
+    justify-content: space-around;
+    height: 50px;
+}
+
+.get-app {
+    height: 100px;
+    justify-content: space-around;
+}
+
+.nome-perfil, .change-account, .register {
+    font-size: 10pt;
+}
+
+.download-icon {
+    height: 37px;
+}
+
+@media (max-width: 880px) {
+    body {
+        margin-top: 32px;
+    }
+
+    .instagram-phone {
+        position: absolute;
+        display: block;
+        max-width: 1px;
+        max-height: 1px;
+        left: -10000px;
+    }
+
+    .group, .entrar, .instagram-nao, .get-app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2px 0;
+    }
+}
+
+@media (max-width:310px) {
+    .get-app p {
+        margin-top: 20px;
+    }
+
+    .download {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
